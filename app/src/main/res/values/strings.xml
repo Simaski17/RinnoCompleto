@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">MVP</string>
+    <string name="password">password</string>
+    <string name="log_in">log_in</string>
+    <string name="user_name">user_name</string>
+    <string name="username_error">username_error</string>
+    <string name="password_error">password_error</string>
+    <string name="separador">:</string>
+    <string name="reloj">Mi Reloj</string>
+    <string name="title_activity_ajustes">Ajustes</string>
+    <string name="settings">Ajuste  de hora</string>
+    <string name="format">HH:MM:SS</string>
+
+</resources>

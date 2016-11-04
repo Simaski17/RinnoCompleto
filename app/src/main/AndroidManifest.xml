@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.jimmyhernandez.rinnocompleto">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".views.SplashScreen"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".views.RinnoTweets"
+            android:screenOrientation="portrait"
+            android:theme="@style/myTema"/>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="b76b4685b6b2d75226edf4ca698b6eca77251472" />
+
+        <activity android:name=".views.RinnoClima"
+            android:theme="@style/myTema"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".views.RinnoHora"
+            android:theme="@style/myTema"
+            android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>

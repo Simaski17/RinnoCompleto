@@ -1,0 +1,198 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".activity.activity.MainActivity" >
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/cityText"
+            style="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:id="@+id/condIcon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/cityText" />
+
+        <TextView
+            android:id="@+id/condDescr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/condIcon"
+            android:layout_alignLeft="@id/condIcon"
+            />
+
+        <TextView
+            android:id="@+id/temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_alignBaseline="@id/condDescr"
+            android:layout_toRightOf="@id/condDescr"/>
+
+        <TextView
+            android:id="@+id/tempMin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/condDescr"
+            android:text="Temp. Min"
+            android:layout_marginTop="15dp" />
+
+        <TextView
+            android:id="@+id/tempMinRes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/tempMin"
+            android:layout_toRightOf="@id/tempMin"/>
+
+        <TextView
+            android:id="@+id/tempMax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/tempMin"
+            android:text="Temp. Max" />
+
+        <TextView
+            android:id="@+id/tempMaxRes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/tempMax"
+            android:layout_toRightOf="@id/tempMax"
+            android:layout_marginLeft="4dp"/>
+
+        <TextView
+            android:id="@+id/viento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/tempMax"
+            android:text="Viento" />
+
+        <TextView
+            android:id="@+id/windSpeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/viento"
+            android:layout_toRightOf="@id/viento"
+            android:layout_marginLeft="4dp" />
+
+        <TextView
+            android:id="@+id/windDeg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/viento"
+            android:layout_toRightOf="@id/windSpeed"
+            android:layout_marginLeft="4dp"/>
+
+    </RelativeLayout>
+    <!--<RelativeLayout
+        android:id="@+id/rl2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl1">
+
+        <TextView
+            android:id="@+id/cityText2"
+            style="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:id="@+id/condIcon2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/cityText2" />
+
+        <TextView
+            android:id="@+id/condDescr2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/condIcon2"
+            android:layout_alignLeft="@id/condIcon2"
+            />
+
+        <TextView
+            android:id="@+id/temp2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_alignBaseline="@id/condDescr2"
+            android:layout_toRightOf="@id/condDescr2"/>
+
+        <TextView
+            android:id="@+id/tempMin2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/condDescr2"
+            android:text="Temp. Min"
+            android:layout_marginTop="15dp" />
+
+        <TextView
+            android:id="@+id/tempMinRes2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/tempMin2"
+            android:layout_toRightOf="@id/tempMin2"/>
+
+        <TextView
+            android:id="@+id/tempMax2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/tempMin2"
+            android:text="Temp. Max" />
+
+        <TextView
+            android:id="@+id/tempMaxRes2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/tempMax2"
+            android:layout_toRightOf="@id/tempMax2"
+            android:layout_marginLeft="4dp"/>
+
+        <TextView
+            android:id="@+id/viento2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/tempMax2"
+            android:text="Viento" />
+
+        <TextView
+            android:id="@+id/windSpeed2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/viento2"
+            android:layout_toRightOf="@id/viento2"
+            android:layout_marginLeft="4dp" />
+
+        <TextView
+            android:id="@+id/windDeg2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/viento2"
+            android:layout_toRightOf="@id/windSpeed2"
+            android:layout_marginLeft="4dp"/>
+
+    </RelativeLayout>-->
+
+
+</RelativeLayout>
